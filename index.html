@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microverse</title>
+    <title>Anwar and mani</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="title">Survey form</h1>
     <p id = "description">This is the solution for survey form page on Microverse trial. Which is solved by Anwar and mani.</p>
     <form action="" id="survey-form">
-        <input type="text" id="name">
-        <input type="email" required id="email">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <label for="name" id="email-label" >Email</label>
+        <input type="email" required id="email"placeholder="Enter your email">
+        <label for="name" id="number-label">Number</label>
+        <input type="number" id="number" placeholder="Enter your number">
+            <label for="dropdown">Your behavior</label>
+
+        <select id="dropdown">
+            <option value="1">good</option>
+            <option value="2">bad</option>
+        </select>
+        <p>Please select your gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+
+        <p>Please select your favorite courses:</p>
+
+        <input type="checkbox" id="course1" name="course1" value="Html">
+        <label for="course1"> Html</label><br>
+        <input type="checkbox" id="course2" name="course2" value="css">
+        <label for="course2"> css</label><br>
+        <input type="checkbox" id="course3" name="course3" value="js">
+        <label for="course3">JS</label><br><br>
+
+         <p><label for="comment">Comments: </label></p>
+  <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+  <input type="submit" id="submit" value="Submit">
     </form>
 </body>
 </html>
